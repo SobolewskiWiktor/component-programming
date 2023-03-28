@@ -1,0 +1,11 @@
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\bin\Debug\zajecia_28.03.exe.config
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\bin\Debug\zajecia_28.03.exe
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\bin\Debug\zajecia_28.03.pdb
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28.03.csproj.AssemblyReference.cache
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28.03.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28._03.Form1.resources
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28._03.Properties.Resources.resources
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28.03.csproj.GenerateResource.cache
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28.03.csproj.CoreCompileInputs.cache
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28.03.exe
+C:\Users\Sobol\Desktop\Studia sem4\programowanie komponentowe\zajecia_28.03\zajecia_28.03\obj\Debug\zajecia_28.03.pdb
