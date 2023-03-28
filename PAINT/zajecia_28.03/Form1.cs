@@ -21,13 +21,15 @@ namespace zajecia_28._03
         int click; 
         Graphics g;
         Brush myBrush;
+        List<Image> history;
         public Form1()
         {
             InitializeComponent();
             pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             g = Graphics.FromImage(pictureBox1.Image); 
             g.Clear(Color.White);
-            numericUpDown1.Value = (decimal)size; 
+            numericUpDown1.Value = (decimal)size;
+            history = new List<Image>();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -72,6 +74,7 @@ namespace zajecia_28._03
                     b = e.Location;
                     g.DrawLine(new Pen(color, size), a, b);
                     pictureBox1.Refresh();
+                    history.Add(new Bitmap(pictureBox1.Image)); 
                 }
                 if(radioButton4.Checked)
                 {
@@ -82,6 +85,7 @@ namespace zajecia_28._03
                     }
                     g.DrawRectangle(new Pen(color, size), Math.Min(a.X, b.X), Math.Min(a.Y, b.Y), Math.Abs(a.X - b.X),Math.Abs(a.Y - b.Y));
                     pictureBox1.Refresh();
+                    history.Add(new Bitmap(pictureBox1.Image));
                 }
                 if(radioButton6.Checked)
                 {
@@ -93,6 +97,7 @@ namespace zajecia_28._03
     
                     g.DrawEllipse(new Pen(color, size), Math.Min(a.X, b.X), Math.Min(a.Y, b.Y), Math.Abs(a.X - b.X), Math.Abs(a.Y - b.Y));
                     pictureBox1.Refresh();
+                    history.Add(new Bitmap(pictureBox1.Image));
                 }
        
 
@@ -132,12 +137,14 @@ namespace zajecia_28._03
                 pictureBox1.Image = new Bitmap(ofd.FileName);
                 g = Graphics.FromImage(pictureBox1.Image);
             }
+            history = new List<Image>();
         }
 
         private void nowyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             g.Clear(Color.White);
             pictureBox1.Refresh();
+            history = new List<Image>();
         }
 
         private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
@@ -183,7 +190,10 @@ namespace zajecia_28._03
 
         private void cofnijToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = 
+            history.RemoveAt(history.Count - 1);
+            pictureBox1.Image = new Bitmap(history.Last());
+            g = Graphics.FromImage(pictureBox1.Image);
+
         }
     }
 }
